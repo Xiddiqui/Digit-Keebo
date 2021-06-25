@@ -1,25 +1,8 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/abdullah/Documents/reactnative/keebo/keebo/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "outputFile": "/Users/abdullah/Documents/reactnative/Digit-Keebo/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
-                {
-                    "source": "/Users/abdullah/Documents/reactnative/keebo/keebo/android/app/build/generated/res/resValues/debug/values/gradleResValues.xml",
-                    "from": {
-                        "startLines": "6,8",
-                        "startColumns": "4,4",
-                        "startOffsets": "156,262",
-                        "endColumns": "63,68",
-                        "endOffsets": "215,326"
-                    },
-                    "to": {
-                        "startLines": "637,638",
-                        "startColumns": "4,4",
-                        "startOffsets": "40648,40712",
-                        "endColumns": "63,68",
-                        "endOffsets": "40707,40776"
-                    }
-                },
                 {
                     "source": "/Users/abdullah/.gradle/caches/transforms-2/files-2.1/e5a97afd1ab7df740ede179762db8756/jetified-android-scalablevideoview-1.0.4/res/values/values.xml",
                     "from": {
@@ -54,25 +37,6 @@
                         "endLines": "113,114,531,564,565,566,567,568,588,615,616,672,676,677,678,679,680,681,682,683,684,685,686,687,688,689,690,691,692,693,694,695,696,697,698,699,700,701,702,703,704,705,711,716,719,720,721,722,723,724,764,765,766,767,768,770,771,772,773,774,775,776,778,779,780,781,790,794,2636,2639,2651,2655,2988,2991,3233,3263,3272,3279,3308,3311,3314,3414,3420,4360",
                         "endColumns": "62,62,50,47,48,47,48,48,42,53,47,72,74,122,95,88,107,116,119,119,101,102,110,106,102,110,168,167,116,103,112,155,107,112,90,110,168,97,126,124,94,106,79,75,72,86,70,70,77,79,85,83,71,81,80,83,76,86,84,78,74,72,76,77,72,77,10,10,12,12,10,10,12,12,25,34,10,10,10,10,10,12,12,10",
                         "endOffsets": "6985,7048,34850,36808,36857,36905,36954,37003,38006,39345,39393,43162,43561,43684,43780,43869,43977,44094,44214,44334,44436,44539,44650,44757,44860,44971,45140,45308,45425,45529,45642,45798,45906,46019,46110,46221,46390,46488,46615,46740,46835,46942,47449,47993,48373,48460,48531,48602,48680,48760,55819,55903,55975,56057,56138,56275,56352,56439,56524,56603,56678,56751,56899,56977,57050,57128,57818,58066,177815,178006,178526,178732,201439,201628,218696,220887,221425,221843,223363,223540,223719,231964,232329,293327"
-                    }
-                },
-                {
-                    "source": "/Users/abdullah/Documents/reactnative/keebo/keebo/node_modules/@react-native-community/datetimepicker/android/build/intermediates/packaged_res/debug/values/values.xml",
-                    "from": {
-                        "startLines": "2,5",
-                        "startColumns": "4,4",
-                        "startOffsets": "100,301",
-                        "endLines": "4,7",
-                        "endColumns": "12,12",
-                        "endOffsets": "296,485"
-                    },
-                    "to": {
-                        "startLines": "2992,2995",
-                        "startColumns": "4,4",
-                        "startOffsets": "201633,201834",
-                        "endLines": "2994,2997",
-                        "endColumns": "12,12",
-                        "endOffsets": "201829,202018"
                     }
                 },
                 {
@@ -205,23 +169,6 @@
                     }
                 },
                 {
-                    "source": "/Users/abdullah/Documents/reactnative/keebo/keebo/android/app/src/main/res/values/strings.xml",
-                    "from": {
-                        "startLines": "1",
-                        "startColumns": "4",
-                        "startOffsets": "16",
-                        "endColumns": "42",
-                        "endOffsets": "54"
-                    },
-                    "to": {
-                        "startLines": "673",
-                        "startColumns": "4",
-                        "startOffsets": "43167",
-                        "endColumns": "42",
-                        "endOffsets": "43205"
-                    }
-                },
-                {
                     "source": "/Users/abdullah/.gradle/caches/transforms-2/files-2.1/dcc76cd07ebcaa6166d73d461b1667fa/cardview-1.0.0/res/values/values.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,35,36,37,38,45,47,50,7",
@@ -241,6 +188,23 @@
                     }
                 },
                 {
+                    "source": "/Users/abdullah/Documents/reactnative/Digit-Keebo/android/app/build/generated/res/resValues/debug/values/gradleResValues.xml",
+                    "from": {
+                        "startLines": "6,8",
+                        "startColumns": "4,4",
+                        "startOffsets": "156,262",
+                        "endColumns": "63,68",
+                        "endOffsets": "215,326"
+                    },
+                    "to": {
+                        "startLines": "637,638",
+                        "startColumns": "4,4",
+                        "startOffsets": "40648,40712",
+                        "endColumns": "63,68",
+                        "endOffsets": "40707,40776"
+                    }
+                },
+                {
                     "source": "/Users/abdullah/.gradle/caches/transforms-2/files-2.1/803d31b2df2f8d968e6cb7c3ffa37ef9/jetified-viewpager2-1.0.0/res/values/values.xml",
                     "from": {
                         "startLines": "2",
@@ -257,6 +221,25 @@
                         "endLines": "7310",
                         "endColumns": "24",
                         "endOffsets": "451716"
+                    }
+                },
+                {
+                    "source": "/Users/abdullah/Documents/reactnative/Digit-Keebo/node_modules/@react-native-community/datetimepicker/android/build/intermediates/packaged_res/debug/values/values.xml",
+                    "from": {
+                        "startLines": "2,5",
+                        "startColumns": "4,4",
+                        "startOffsets": "100,301",
+                        "endLines": "4,7",
+                        "endColumns": "12,12",
+                        "endOffsets": "296,485"
+                    },
+                    "to": {
+                        "startLines": "2992,2995",
+                        "startColumns": "4,4",
+                        "startOffsets": "201633,201834",
+                        "endLines": "2994,2997",
+                        "endColumns": "12,12",
+                        "endOffsets": "201829,202018"
                     }
                 },
                 {
@@ -298,7 +281,24 @@
                     }
                 },
                 {
-                    "source": "/Users/abdullah/Documents/reactnative/keebo/keebo/android/app/src/main/res/values/styles.xml",
+                    "source": "/Users/abdullah/Documents/reactnative/Digit-Keebo/android/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "1",
+                        "startColumns": "4",
+                        "startOffsets": "16",
+                        "endColumns": "42",
+                        "endOffsets": "54"
+                    },
+                    "to": {
+                        "startLines": "673",
+                        "startColumns": "4",
+                        "startOffsets": "43167",
+                        "endColumns": "42",
+                        "endOffsets": "43205"
+                    }
+                },
+                {
+                    "source": "/Users/abdullah/Documents/reactnative/Digit-Keebo/android/app/src/main/res/values/styles.xml",
                     "from": {
                         "startLines": "3",
                         "startColumns": "4",

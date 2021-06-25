@@ -6,7 +6,7 @@ const AppScreen = ()=>{
     return(
         <View style={styles.containers}>
             <Text>
-                Home
+                Homebdabsbcasbjcbh
             </Text>
         </View>
     )
