@@ -14,11 +14,10 @@ import {
   
   import {Icon} from 'react-native-elements';
   import React from 'react';
-  import {Text} from 'react-native';
-  import {View} from 'react-native';
+  import {View,StatusBar} from 'react-native';
   import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
   import {createStackNavigator} from '@react-navigation/stack';
-  import {appColor, iconColor} from '../../constants/colors';
+  import {appColor, cardColor, iconColor} from '../../constants/colors';
   
   import FA from 'react-native-vector-icons/FontAwesome';
   import FA5 from 'react-native-vector-icons/FontAwesome5';
@@ -75,7 +74,7 @@ import {
           inactiveTintColor: iconColor.secondary,
           allowFontScaling: true,
           style: {
-            backgroundColor:appColor.secondary,
+            backgroundColor:cardColor.primary,
             //  backgroundColor: iconColor.secondary,
             //  borderTopLeftRadius: responsiveWidth(6),
             //  borderTopRightRadius: responsiveWidth(6),
@@ -162,11 +161,13 @@ import {
   
   const App = () => {
     return (
+    <><StatusBar translucent={false} backgroundColor={appColor.primary} barStyle={'dark-content'}/>
       <MainApp.Navigator
         screenOptions={{headerShown: false}}
         initialRouteName={'Main'}>
         <MainApp.Screen name={'Main'} component={MainTabScreens} />
-      </MainApp.Navigator>
+      </MainApp.Navigator></>
+
     );
   };
   

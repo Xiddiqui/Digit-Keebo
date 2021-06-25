@@ -1,22 +1,23 @@
 /** @format */
 
 export const textColor = {
-    primary: '#ffffff', //Text – Black
-    secondary: '#000000', //Text – White
+    primary: '#000000', //Text – Black
+    secondary: '#0384BB', //Text – blue
     placholderColor: '#878787', //Text – Light Grey
     borderColor:'#757575',
-    txtInputtitle:'#c2c2c2'
+    txtInputtitle:'#c2c2c2',
+    white:'#ffffff'
     
   };
   
   export const appColor = {
-    primary: '#183046', //dark blue
+    primary: '#eeeeee', //offwhite
     secondary: '#000000',
     background: '#EFEFEF',
     backgroundcolor: '#2C4354',
   };
   export const cardColor = {
-    primary: '#F5F5F5',
+    primary: '#ffffff',
     secondary: '#000000',
   };
   export const appColor2 = {
@@ -45,6 +46,6 @@ export const textColor = {
     c2: '#fff',
   };
   export const iconColor = {
-    primary: '#ffffff',
+    primary: '#0384BB',
     secondary: '#c5c7c5',
   };

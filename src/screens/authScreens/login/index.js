@@ -1,14 +1,16 @@
 import React from 'react'
-import {View,Text} from 'react-native'
+import {View,Text,TouchableOpacity} from 'react-native'
 import {styles} from './style'
 
-const AppScreen = ()=>{
+const AppScreen = (props)=>{
     return(
-        <View style={styles.containers}>
+        <TouchableOpacity style={styles.container}
+        onPress={()=>props.navigation.navigate('App')}
+        >
             <Text>
                 login
             </Text>
-        </View>
+        </TouchableOpacity>
     )
 }
 export default AppScreen
