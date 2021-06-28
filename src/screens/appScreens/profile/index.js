@@ -42,7 +42,7 @@ const [data , setData]=useState([
                 </Text>
             </View>
             <View style={styles.myphotoview}>
-                <Text>
+                <Text style={styles.myphototxt}>
                     MyPhotos
                 </Text>
                 <TouchableOpacity>

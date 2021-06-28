@@ -82,30 +82,7 @@ import {
           },
         }}
         initialRouteName={'Home'}>
-        <MainTab.Screen
-          name={'Home'}
-          component={HomeStackScreens}
-          options={() => ({
-            tabBarIcon: ({focused, color, size}) => {
-              return (
-                <View
-                  style={{
-                    alignItems: 'center',
-                    height: tabBarHeight,
-                    justifyContent: 'flex-end',
-                    width: responsiveWidth(15),
-                    paddingBottom: responsiveHeight(2),
-                  }}>
-                  <Icon
-                    name={'home'}
-                    type={'feather'}
-                    color={focused ? iconColor.primary : iconColor.secondary}
-                  />
-                </View>
-              );
-            },
-          })}
-        />
+       
   
         <MainTab.Screen
           name={'Chat'}
@@ -124,6 +101,30 @@ import {
                   <Icon
                     name={'piechart'}
                     type={'antdesign'}
+                    color={focused ? iconColor.primary : iconColor.secondary}
+                  />
+                </View>
+              );
+            },
+          })}
+        />
+         <MainTab.Screen
+          name={'Home'}
+          component={HomeStackScreens}
+          options={() => ({
+            tabBarIcon: ({focused, color, size}) => {
+              return (
+                <View
+                  style={{
+                    alignItems: 'center',
+                    height: tabBarHeight,
+                    justifyContent: 'flex-end',
+                    width: responsiveWidth(15),
+                    paddingBottom: responsiveHeight(2),
+                  }}>
+                  <Icon
+                    name={'home'}
+                    type={'feather'}
                     color={focused ? iconColor.primary : iconColor.secondary}
                   />
                 </View>
