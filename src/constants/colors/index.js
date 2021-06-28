@@ -18,7 +18,7 @@ export const textColor = {
   };
   export const cardColor = {
     primary: '#ffffff',
-    secondary: '#000000',
+    secondary: '#e5f2f8',
   };
   export const appColor2 = {
     primary: '#f8f8f8',
@@ -48,4 +48,5 @@ export const textColor = {
   export const iconColor = {
     primary: '#0384BB',
     secondary: '#c5c7c5',
+    yellow:'#fdd500'
   };

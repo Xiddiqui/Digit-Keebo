@@ -99,7 +99,7 @@ import {
                     paddingBottom: responsiveHeight(2),
                   }}>
                   <Icon
-                    name={'piechart'}
+                    name={'message1'}
                     type={'antdesign'}
                     color={focused ? iconColor.primary : iconColor.secondary}
                   />

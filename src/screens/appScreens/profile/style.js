@@ -43,11 +43,13 @@ export const styles = StyleSheet.create({
         justifyContent:'space-between',
         width:responsiveWidth(90),
         alignSelf:'center',
-        marginTop:responsiveHeight(2)
+        marginTop:responsiveHeight(3)
     },
     image:{
-        height:responsiveHeight(20),
-        width:responsiveWidth(20)
+        height:responsiveHeight(25),
+        width:responsiveWidth(30),
+        marginLeft:responsiveWidth(2),
+        borderRadius:responsiveWidth(4)
     },
     dp:{
         height:responsiveWidth(35),
@@ -61,5 +63,44 @@ export const styles = StyleSheet.create({
     myphototxt:{
         fontFamily:fontFamily.appTextBold,
         fontSize:responsiveFontSize(1.7)
+    },
+    Promptscard:{
+        backgroundColor:cardColor.secondary,
+        width:responsiveWidth(90),
+        borderRadius:responsiveWidth(5),
+        alignSelf:'center',
+        marginTop:responsiveHeight(2),
+        padding:responsiveWidth(3),
+        flexDirection:'row',
+        justifyContent:'space-between',
+        alignItems:'center'
+    },
+    footer:{
+        marginBottom:responsiveHeight(2)
+    },
+    circlecard:{
+        height:responsiveWidth(10),
+        width:responsiveWidth(10),
+        borderRadius:responsiveWidth(10/2),
+        backgroundColor:cardColor.primary,
+        alignItems:'center',
+        justifyContent:'center',
+        marginLeft:responsiveWidth(3),
+        shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 2,
+        },
+        shadowOpacity: 0.25,
+        shadowRadius: 3.84,
+        elevation: 5,
+    },
+    circlecardview:{
+        flexDirection:'row',
+        position:'absolute',
+        zIndex:1,
+        marginTop:responsiveHeight(1),
+        alignSelf:'flex-end',
+        paddingRight:responsiveWidth(5),
     }
 })

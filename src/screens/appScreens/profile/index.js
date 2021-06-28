@@ -1,10 +1,13 @@
 import React,{useState} from 'react'
 import {View,Text,StatusBar,ImageBackground,FlatList,Image,ScrollView,TouchableOpacity} from 'react-native'
-import { appColor } from '../../../constants/colors'
+import { appColor, cardColor, iconColor } from '../../../constants/colors'
 import {appImages} from '../../../assets/utility'
 import {styles} from './style'
+import { responsiveWidth } from 'react-native-responsive-dimensions'
+import {Icon} from 'react-native-elements'
+
 const AppScreen = () => {
-const [data , setData]=useState([
+const [dataSource , setDataSource]=useState([
     {
         id:'1',
         image:appImages.user1
@@ -22,8 +25,37 @@ const [data , setData]=useState([
         image:appImages.user1
     }
 ])
+const [dataSource1 , setDataSource1]=useState([
+    {
+        id:'1',
+        name:'Favorite movie',
+        cat:'Rohnin',
+        flag:true
+    },
+    {
+        id:'2',
+        name:'Favorite Food',
+        cat:'Soshi',
+        flag:false
+    },
+    {
+        id:'3',
+        name:'Dream Job',
+        cat:'Chef',
+        flag:false
+    },
+   
+])
     return(
         <View style={styles.container}>
+            <View style={styles.circlecardview}>
+                <TouchableOpacity style={styles.circlecard}>
+                    <Icon name={'mode-edit'} type={'material'}/>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.circlecard}>
+                    <Icon name={'dots-three-vertical'} type={'entypo'}/>
+                </TouchableOpacity>
+            </View>
             <ScrollView>
             <ImageBackground source={appImages.cover} style={styles.cover}>
                 <Image source={appImages.user1} style={styles.dp}/>
@@ -53,16 +85,48 @@ const [data , setData]=useState([
             </View>
             <View>
                 <FlatList
-                data={data}
+                data={dataSource}
+                ListHeaderComponent={<View style={{marginLeft:responsiveWidth(3)}}/>}
+                ListFooterComponent={<View style={{marginRight:responsiveWidth(3)}}/>}
                 horizontal={true}
                 keyExtractor={(item)=>item.id}
-                renderItem={({item,index})=>{
+                renderItem={({item,index})=>(
                     <View>
                         <Image source={item.image} style={styles.image}/>
                     </View>
-                }}
+                )}
                 />
             </View>
+            <View style={styles.myphotoview}>
+                <Text style={styles.myphototxt}>
+                    Prompts
+                </Text>
+                <TouchableOpacity>
+                <Text style={styles.biotxt}>
+                    Edit
+                </Text>
+                </TouchableOpacity>
+            </View>
+            <View>
+                <FlatList
+                data={dataSource1}
+                renderItem={({ item, index }) => (
+                    <View style={styles.Promptscard}>
+                        <View>
+                        <Text style={styles.biotxt}>
+                            {item.name}
+                        </Text>
+                        <Text style={styles.txt}>
+                            {item.cat}
+                        </Text>
+                        </View>
+                        <Icon name={'star'} type={'entypo'} color={item.flag?iconColor.yellow:cardColor.secondary}/>
+                    </View>
+                )}
+                
+                />
+            </View>
+            <View style={styles.footer}/>
             </ScrollView>
         </View>
     )
